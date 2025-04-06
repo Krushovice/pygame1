@@ -27,6 +27,8 @@ def main():
 
     background = pygame.image.load("../data/levels/battleback5.png")
 
+    music = pygame.mixer.Sound("../assets/sounds/city_sky.ogg")
+
     running = True
     while running:
         dt = clock.tick(60) / 1000
@@ -34,6 +36,8 @@ def main():
         screen.fill((0, 0, 0))  # Очистка экрана
 
         screen.blit(background, (0, 0))
+
+        music.play()
 
         # Обработка событий
         running = handle_events(
