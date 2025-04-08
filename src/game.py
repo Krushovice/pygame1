@@ -22,7 +22,7 @@ pygame.display.set_caption("Ghosts of War")
 def main():
     clock = pygame.time.Clock()
 
-    player = Player(x=100, y=350)
+    player = Player(x=100)
     # enemy = Enemy(300, 85)
 
     background = pygame.image.load("../data/levels/battleback5.png")
